@@ -1,19 +1,16 @@
 let a = 8;
 
 let b = a + 1;
+console.log(b);
+a = a + 1; //a += 1
+a = a * 2; //a *= 2
+b = b - 5; //b -= 5
+b = b * b; //b *= b
+a = a + 3; //a += 3
 
-let a = a + 1;
-
-let a = a * 2;
-
-let b = b / 5;
-
-let b = b * b;
-
-let a = a + 3;
-
-let a = 1;
-if (a === 1) {
-a + 2
+if (a == 1) {
+    console.log(a = a + 2);
 }
-a + 3
+else {
+    console.log(a = a + 3);
+}

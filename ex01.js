@@ -15,4 +15,4 @@ let obj = {
     age: 28,
     location: 'france'
 }
-console.log(typeof obj)
+console.log(typeof obj);

@@ -1,6 +1,6 @@
 let isLogin = true;
 
-if (true) {
+if (isLogin == true) {
     console.log('Connected')
 } else {
     console.log('Not Authorized')
