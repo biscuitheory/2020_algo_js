@@ -1,7 +1,4 @@
-/*function hello() {
-    return true;
-}*/
-
+//Fonction qui retourne true
 const hello = () => {
     return true;
 }
@@ -9,6 +6,8 @@ const hello = () => {
 resultat = hello();
     console.log(resultat)
 
+
+//Fonction qui prend en paramètre une chaîne de caractères et qui retourne cette même chaîne
 const stringReturn = (str) => {
     return str;
 }
@@ -16,28 +15,24 @@ const stringReturn = (str) => {
 resultat = (stringReturn);
     console.log(resultat)
 
-let name = 'tutu'
-
-let myName = stringReturn(name);
-console.log(myName);
-
+//Fonction qui prend en paramètre deux chaînes de caractères et qui renvoit la concaténation de ces deux chaînes    
 const concatenation = (str, nb, str2) => {
     return str + nb + str2;
 }
 
-let conca = concatenation("j'ai ", 28, " ans");
+let conca = concatenation("J'ai ", 28, " ans");
 
 console.log(conca)
 
-let text = 'Hello World';
-let text1 = 'Hello World';
-let text2 = 'Hello World';
-
-const displayText = (unText) =>{
-    console.log(unText)
-
-}
-
-displayText(text);
-
-displayText(text2);
+//Fonction qui prend en paramètre deux nombres
+const numbers = (nb1, nb2) => {
+    if (nb1 > nb2) {
+        return 'Le premier nombre est plus grand';
+    } else if (nb1 < nb2) {
+        return 'Le premier nombre est plus petit';
+    } else if (nb1 == nb2) {
+        return 'Les deux nombres sont identiques';
+    }
+    numbers(6,6);
+};
+    console.log(numbers(6, 6));
